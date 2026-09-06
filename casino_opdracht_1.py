@@ -8,14 +8,12 @@ sex = input("Wat is uw geslacht? (m/v/x) ").lower()
 aanhef = ""
 if sex == "m":
     aanhef = "meneer"
-    print(f"Welkom {aanhef} {name} bij Casino de Gouden Driehoek")
 elif sex == "v":
     aanhef = "mevrouw"
-    print(f"Welkom {aanhef} {name} bij Casino de Gouden Driehoek")
 elif sex == "x":
-    print(f"Welkom {name} bij Casino de Goudendriehoek")
+    aanhef = ""
 else:
-    print("Maak een geldige keuze (m/v/x")
+        print('Maak een geldige keuze (m/v/x')
 
 #budget FIXME print functies uitbreiden
 start_budget = float(input("Wat is uw startbudget in €? "))
