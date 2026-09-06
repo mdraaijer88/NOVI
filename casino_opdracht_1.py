@@ -1,4 +1,7 @@
 import random
+#Heb het nog niet afgekregen ivm eerste week nieuw werk en
+#drukte daarvan. Ga er morgenavond weer mee aan de slag en probeer bij te werken.
+
 # If Test mode wel gevonden via AI
 TEST_MODE = True
 
