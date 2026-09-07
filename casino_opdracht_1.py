@@ -1,4 +1,5 @@
 import random
+
 #Heb het nog niet afgekregen ivm eerste week nieuw werk en
 #drukte daarvan. Ga er morgenavond weer mee aan de slag en probeer bij te werken.
 
@@ -60,13 +61,12 @@ print(
     f"{'Uw speelsaldo is onvoldoende' if total_budget <= 0 else 'Uw speelsaldo is voldoende'}")
 
 round_number = 1
-spin = (round_number * 7) % 37
 print("\nKies één van de volgende opties:")
 print("1. Rood")
 print("2. Zwart")
 print("3. Even")
 print("4. Oneven")
-
+color = random.choice(["rood", "zwart"])
 while True:
     #chance = random Hoe krijg ik dit aan het werk?
     choice = (input("Maak je keuze: "))
@@ -83,4 +83,22 @@ while True:
         print("Je hebt Oneven gekozen")
     else:
         print("Kies een juiste keuze ")
-        bet = input(float("Wat is je inzet? "))
+
+    bet = float(input("Wat is je inzet? "))
+    if bet <= 0:
+        print("Kies een geldig bedrag...")
+    else:
+        print(f"€{bet:.2f} is je inzet!")
+
+    spin = random.randint(0, 36)
+
+    if spin == 0:
+        color = "geen"
+    elif spin in rood:
+        color = "rood"
+    else:
+        color = "zwart"
+
+    print("De roulette draait...")
+    print(f"De roulette komt uit op: {spin}")
+
