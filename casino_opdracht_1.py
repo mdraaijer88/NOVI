@@ -65,7 +65,6 @@ print("3. Even")
 print("4. Oneven")
 
 while True:
-    #chance = random Hoe krijg ik dit aan het werk?
     choice = (input("Maak je keuze: "))
     if choice == "0":
         print("Bedankt voor het spelen. ")
