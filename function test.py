@@ -1,3 +1,4 @@
+
 def input_user():
     name = input("Wat is je naam? ")
     destination = input("Waar wil je naartoe? ")
@@ -8,11 +9,13 @@ def price():
     kosten = 0.40
     return kilometer * kosten
 
-print(input_user())
-print(f"Dat kost €{price():.2f}")
+def main():
+    user = input_user()
+    kosten = price()
+    print(user)
+    print(f"Dat kost €{kosten:.2f}")
 
-print(input_user())
-print(f"Dat kost €{price():.2f}")
-
-
+main()
+main()
+main()
 
