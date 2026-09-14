@@ -57,7 +57,6 @@ print(
     f"-----------------------------\n"
     f"{'Uw speelsaldo is onvoldoende' if total_budget <= 0 else 'Uw speelsaldo is voldoende'}")
 
-#Begin roulette
 
 print("\nKies één van de volgende opties:")
 print("1. Rood")
