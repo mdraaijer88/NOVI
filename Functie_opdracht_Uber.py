@@ -31,14 +31,19 @@ def bereken_kosten(price_km, distance):
     return price_km * distance
 
 
-type_uber()
+def main():
+    type_uber()
+    choice = int(input("Je keuze: "))
+    name = user_choice(choice)
+    price_km = get_price_km(choice)
 
-choice = int(input("Je keuze: "))
-name = user_choice(choice)
-price_km = get_price_km(choice)
+    distance = float(input("Afstand in km: "))
+    kosten = bereken_kosten(price_km, distance)
 
-distance = float(input("Afstand in km: "))
-kosten = bereken_kosten(price_km, distance)
+    print("Je koos", name)
+    print("De rit kost", kosten, "euro")
 
-print("Je koos", name)
-print("De rit kost", kosten, "euro")
+
+main()
+main()
+main()
