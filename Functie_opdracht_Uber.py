@@ -6,15 +6,16 @@ def type_uber():
 
 
 def user_choice(choice):
-    if choice == 1:
-        return "Uber Black"
-    elif choice == 2:
-        return "Uber Van"
-    elif choice == 3:
-        return "Uber X"
-    else:
-        return "onbekend"
-
+    while True:
+        if choice == 1:
+            return "Uber Black"
+        elif choice == 2:
+            return "Uber Van"
+        elif choice == 3:
+            return "Uber X"
+        else:
+            print("Maak een geldige keuze")
+# TODO Nog werkend maken
 
 def get_price_km(choice):
     if choice == 1:
