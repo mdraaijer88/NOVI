@@ -35,7 +35,6 @@ def check_age(birthdate):
 
 
 def define_start_budget():
-    # TODO: try/except voor als iemand een letter typt
     start_budget = float(input("Wat is uw startbudget in €? "))
     total_budget = start_budget - REGIS_FEE - GAMB_TAX - TICKET
     return start_budget, total_budget
@@ -61,6 +60,7 @@ def show_games_menu():
     print("1. Roulette")
     print("2. Fruitmachine")
     print("0. Stoppen")
+
 
 def roulette_spel(total_budget):
     print("\nKies één van de volgende opties:")
