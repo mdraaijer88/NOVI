@@ -11,8 +11,6 @@ def user_input():
     sur_name = input("Wat is uw achternaam? ")
     birthdate = input("Wat is uw geboortedatum? (dd-mm-yyyy) ")
     gender = input("Wat is uw geslacht? (m/v/x) ").lower()
-    # TODO: controleren of gender m, v of x is
-    # TODO: controleren of birthdate echt dd-mm-yyyy is
     return first_name, sur_name, birthdate, gender
 
 
